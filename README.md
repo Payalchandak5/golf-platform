@@ -1,36 +1,138 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Golf Platform ⛳
 
-## Getting Started
+A modern full-stack subscription-based web application built using Next.js, Tailwind CSS, Supabase, and Stripe. The platform includes secure authentication, subscription plans, protected dashboards, and responsive UI deployment.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+- 🔐 User Authentication (Signup/Login)
+- 👤 Protected Dashboard
+- 💳 Stripe Subscription Integration
+- ☁️ Supabase Database Integration
+- 🎨 Modern Responsive UI using Tailwind CSS
+- ⚡ Fast Performance with Next.js
+- 🌍 Live Deployment on Vercel
+
+---
+
+## 🛠️ Tech Stack
+
+- Frontend: Next.js, React
+- Styling: Tailwind CSS
+- Backend & Database: Supabase
+- Payments: Stripe
+- Deployment: Vercel
+
+---
+
+## 📂 Project Structure
+
+```bash
+app/
+ ├── login/
+ ├── signup/
+ ├── dashboard/
+ ├── subscribe/
+ ├── api/
+ │    ├── checkout/
+ │    └── webhook/
+lib/
+ └── supabaseClient.ts
+```
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/golf-platform.git
+```
+
+Go to the project folder:
+
+```bash
+cd golf-platform
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🔑 Environment Variables
 
-To learn more about Next.js, take a look at the following resources:
+Create a `.env.local` file and add:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+STRIPE_SECRET_KEY=your_stripe_secret_key
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_publishable_key
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 💳 Payment Integration
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project uses Stripe Checkout for subscription-based payments.
+
+Users can:
+- Choose subscription plans
+- Complete secure payments
+- Access protected dashboard features
+
+---
+
+## ☁️ Deployment
+
+The project is deployed using Vercel.
+
+Steps:
+1. Push code to GitHub
+2. Import repository in Vercel
+3. Add environment variables
+4. Deploy
+
+---
+
+## 📸 Screens Included
+
+- Login Page
+- Signup Page
+- Subscription Page
+- User Dashboard
+
+---
+
+## 🎯 Learning Outcomes
+
+Through this project, I learned:
+- Full-stack web development
+- Authentication & Authorization
+- API Integration
+- Payment Gateway Integration
+- Cloud Deployment
+- Debugging production errors
+
+## 📜 License
+
+This project is for educational and learning purposes.
